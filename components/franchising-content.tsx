@@ -67,7 +67,7 @@ export function FranchisingContent() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Introduction */}
           <div className={`text-center mb-16 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
-            <h2 className="font-bebas-neue text-4xl md:text-5xl font-bold text-black mb-6">JOIN THE FALLOUT FAMILY</h2>
+            <h2 className="font-bebas-neue text-4xl md:text-5xl font-bold text-black mb-6">JOIN THE FALLOT FAMILY</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Fallout is expanding across Pakistan and we're looking for passionate entrepreneurs to join our franchise
               network. With our proven business model, comprehensive support, and growing brand recognition, now is the
