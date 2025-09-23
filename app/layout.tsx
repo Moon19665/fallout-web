@@ -21,7 +21,7 @@ const bebasNeue = Bebas_Neue({
 })
 
 export const metadata: Metadata = {
-  title: "BRIM - Best Burgers in Pakistan",
+  title: "Fallout - Best Burgers in Pakistan",
   description:
     "Experience the spiciest and most delicious burgers in Pakistan. BRIM delivers the best smash burgers, loaded fries, and more.",
   generator: "v0.app",
