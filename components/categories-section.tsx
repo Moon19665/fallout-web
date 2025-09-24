@@ -11,37 +11,37 @@ const categories = [
   },
   {
     id: "hot-dogs",
-    name: "HOT DOGS",
+    name: "TACOS",
     image: "/loaded-hot-dog-with-toppings--professional-food-ph.jpg",
   },
   {
     id: "loaded-fries",
-    name: "LOADED FRIES",
+    name: "WRAPS",
     image: "/loaded-fries-with-cheese-and-toppings--professiona.jpg",
   },
   {
     id: "brimwich",
-    name: "FALLOUTWICH",
+    name: "SAUCES",
     image: "/gourmet-sandwich-wrap--professional-food-photograp.jpg",
   },
   {
     id: "brim-junior",
-    name: "Fallout JUNIOR",
+    name: "SURVIVAL PACK",
     image: "/kids-meal-box-with-burger-and-fries--professional-.jpg",
   },
   {
     id: "sips-scoops",
-    name: "SIPS AND SCOOPS",
+    name: "APPETISERS",
     image: "/milkshake-and-ice-cream--professional-food-photogr.jpg",
   },
   {
     id: "desserts",
-    name: "DESSERTS",
+    name: "MINI MEALS",
     image: "/chocolate-dessert--professional-food-photography.jpg",
   },
   {
     id: "naked-box",
-    name: "NAKED BOX",
+    name: "EXTRA TOPPINGS",
     image: "/meal-box-with-various-items--professional-food-pho.jpg",
   },
 ]
@@ -84,9 +84,9 @@ export function CategoriesSection() {
               className={`group ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="bg-black rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="bg-[#F7C431] rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 {/* Category image */}
-                <div className="aspect-square bg-gray-900 flex items-center justify-center p-4">
+                <div className="aspect-square bg-[#F7C431] flex items-center justify-center p-4">
                   <img
                     src={category.image || "/placeholder.svg"}
                     alt={category.name}

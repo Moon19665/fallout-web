@@ -47,7 +47,7 @@ export function DeliverySection() {
           >
             <div className="relative animate-float">
               <img
-                src="/delivery-bag-with-brim-branding--brown-paper-bag.jpg"
+                src="/fallout-logo.png"
                 alt="Fallout Delivery Bag"
                 className="rounded object-contain drop-shadow-2xl"
               />

@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react"
 import { AlertTriangle } from "lucide-react"
-
+import { Nav } from "react-day-picker"
+import { Navigation } from "./navigation"
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
 
@@ -12,6 +13,7 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-orange-100 via-red-50 to-orange-200 overflow-hidden">
+      <Navigation/>
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-32 h-32 bg-orange-300/30 rounded-full blur-xl animate-float"></div>
@@ -25,16 +27,21 @@ export function HeroSection() {
         ></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           {/* Left side - Text content */}
           <div className={`space-y-8 ${isVisible ? "animate-slide-in-left" : "opacity-0"}`}>
             {/* Warning badges */}
             <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2 bg-[#F7C431] text-white px-4 py-2 rounded-lg animate-pulse-glow">
+              {/* <div className="flex items-center space-x-2 bg-[#F7C431] text-white px-4 py-2 rounded-lg animate-pulse-glow">
                 <AlertTriangle className="h-5 w-5" />
                 <span className="font-bold text-sm">WARNING!</span>
-              </div>
+              </div> */}
+              <img
+                src="/fallout-logo.png"
+                alt="fallout Logo"
+                className="h-32"
+              />
               {/* <div
                 className="flex items-center space-x-2 bg-red-600 text-white px-4 py-2 rounded-lg animate-pulse-glow"
                 style={{ animationDelay: "0.5s" }}
@@ -46,20 +53,20 @@ export function HeroSection() {
 
             {/* Main heading */}
             <div className="space-y-4">
-              <h1 className="font-bebas-neue text-6xl md:text-8xl lg:text-9xl font-bold text-[#F7C431] leading-none tracking-tight hover:scale-105 transition-transform duration-300 cursor-default">
-                SPICY
+              <h1 className="font-bebas-neue text-3xl md:text-4xl lg:text-6xl font-bold text-[#F7C431] leading-none tracking-tight hover:scale-105 transition-transform duration-300 cursor-default">
+                CHILLI 🌶️
               </h1>
               <h1
-                className="font-bebas-neue text-6xl md:text-8xl lg:text-9xl font-bold text-[#F7C431] leading-none tracking-tight hover:scale-105 transition-transform duration-300 cursor-default"
+                className="font-bebas-neue text-3xl md:text-4xl lg:text-6xl font-bold text-[#F7C431] leading-none tracking-tight hover:scale-105 transition-transform duration-300 cursor-default"
                 style={{ animationDelay: "0.2s" }}
               >
                 SMASH
               </h1>
               <h1
-                className="font-bebas-neue text-6xl md:text-8xl lg:text-9xl font-bold text-[#F7C431] leading-none tracking-tight hover:scale-105 transition-transform duration-300 cursor-default"
+                className="font-bebas-neue text-3xl md:text-4xl lg:text-6xl font-bold text-[#F7C431] leading-none tracking-tight hover:scale-105 transition-transform duration-300 cursor-default"
                 style={{ animationDelay: "0.4s" }}
               >
-                DOWN
+                FALLDOWN
               </h1>
             </div>
 
@@ -80,7 +87,7 @@ export function HeroSection() {
               {/* Main burger image */}
               <div className="relative z-10 animate-float hover:scale-110 transition-transform duration-500">
                 <img
-                  src="/delicious-spicy-burger-with-multiple-layers--sesam.jpg"
+                  src="/taco.webp"
                   alt="Spicy Smash Burger"
                   className="w-full max-w-lg mx-auto h-auto object-contain drop-shadow-2xl"
                 />

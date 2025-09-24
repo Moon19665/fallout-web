@@ -11,7 +11,7 @@ import ComingSooon from "@/components/coming-soon";
 export default function HomePage() {
   return (
     <div className="min-h-screen">
-      <Navigation />
+      {/* <Navigation /> */}
       <main>
         <HeroSection />
         <CategoriesSection />
@@ -21,7 +21,7 @@ export default function HomePage() {
           poster="/images/video-poster.jpg"
         />
         <AboutSection />
-        <ReadyToServeSection />
+        {/* <ReadyToServeSection /> */}
         <ComingSooon/>
       </main>
       <Footer />

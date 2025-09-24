@@ -147,7 +147,7 @@ export function Navigation() {
   return (
     <>
       {/* Top banner */}
-      <div className="bg-black text-white text-center py-1 text-sm relative z-50">
+      <div className="bg-[#F7C431] text-white text-center py-1 text-sm relative z-50">
         Welcome to Fallout Pakistan
       </div>
 
@@ -166,11 +166,11 @@ export function Navigation() {
               {/* <div className="bg-black text-white px-4 py-2 font-bebas-neue text-xl font-bold tracking-wider hover:bg-gray-800 transition-colors">
                 Fallout
               </div> */}
-              <img
+              {/* <img
                 src="/fallout-logo.png"
                 alt="fallout Logo"
                 className="h-12"
-              />
+              /> */}
             </Link>
 
             {/* Desktop Navigation */}

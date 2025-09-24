@@ -163,15 +163,22 @@ const menuItems = {
   ],
 }
 
-const categories = [
-  { id: "beef-burgers", name: "BEEF BURGERS", emoji: "🐄", count: 6 },
-  { id: "chicken-burger", name: "CHICKEN BURGER", emoji: "🐔", count: 3 },
-  { id: "brim-junior", name: "Fallout JUNIOR", count: 1 },
-  { id: "brimwich", name: "FalloutWICH", count: 1 },
-  { id: "naked-box", name: "NAKED BOX", count: 1 },
-  { id: "hot-dogs", name: "HOT DOGS", count: 2 },
-  { id: "curly-fries", name: "CURLY FRIES", count: 1 },
-  { id: "fries", name: "FRIES", count: 1 },
+type Category = {
+  id: string
+  name: string
+  count: number
+  emoji?: string
+}
+
+const categories: Category[] = [
+  { id: "beef-burgers", name: "BURGERS", emoji: "🍔", count: 6 },
+  { id: "chicken-burger", name: "TACOS", emoji: "🌮", count: 3 },
+  { id: "brim-junior", name: "WRAPS", emoji: "🌯", count: 1 },
+  { id: "brimwich", name: "SAUCES", emoji: "🍶", count: 1 },
+  { id: "naked-box", name: "SURVIVAL PACK / MINI MEALS", emoji: "🍱", count: 1 },
+  { id: "hot-dogs", name: "APPETISERS", emoji: "🌭", count: 2 },
+  // { id: "curly-fries", name: "CURLY FRIES", count: 1 },
+  // { id: "fries", name: "FRIES", count: 1 },
 ]
 
 export function MenuContent() {
