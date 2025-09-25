@@ -40,14 +40,14 @@ export function FranchisingContent() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-r from-[#F7C431] via-[#D1991C] to-[#B58215] overflow-hidden">
+      <section className="relative h-96 bg-gradient-to-r from-[#ff4626] via-[#D1991C] to-[#B58215] overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="/delicious-spicy-burger-with-multiple-layers--sesam.jpg"
             alt="Franchising Background"
             className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-[#F7C431]/40"></div>
+          <div className="absolute inset-0 bg-[#ff4626]/40"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-center">
@@ -85,7 +85,7 @@ export function FranchisingContent() {
                 }`}
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="text-[#F7C431] mb-4 flex justify-center">{benefit.icon}</div>
+                <div className="text-[#ff4626] mb-4 flex justify-center">{benefit.icon}</div>
                 <h3 className="font-bold text-xl text-black mb-4">{benefit.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
               </div>
@@ -96,7 +96,7 @@ export function FranchisingContent() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Requirements */}
             <div className={`${isVisible ? "animate-slide-in-left" : "opacity-0"}`}>
-              <div className="bg-[#F7C431]/90 text-white rounded-lg p-8">
+              <div className="bg-[#ff4626]/90 text-white rounded-lg p-8">
                 <h3 className="font-bebas-neue text-3xl font-bold mb-6">FRANCHISE REQUIREMENTS</h3>
                 <ul className="space-y-4">
                   {requirements.map((requirement, index) => (
@@ -115,7 +115,7 @@ export function FranchisingContent() {
                 <h3 className="font-bebas-neue text-3xl font-bold text-black mb-6">FRANCHISE PROCESS</h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-[#F7C431] text-white rounded-full flex items-center justify-center font-bold text-sm">
+                    <div className="w-8 h-8 bg-[#ff4626] text-white rounded-full flex items-center justify-center font-bold text-sm">
                       1
                     </div>
                     <div>
@@ -124,7 +124,7 @@ export function FranchisingContent() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-[#F7C431] text-white rounded-full flex items-center justify-center font-bold text-sm">
+                    <div className="w-8 h-8 bg-[#ff4626] text-white rounded-full flex items-center justify-center font-bold text-sm">
                       2
                     </div>
                     <div>
@@ -133,7 +133,7 @@ export function FranchisingContent() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-[#F7C431] text-white rounded-full flex items-center justify-center font-bold text-sm">
+                    <div className="w-8 h-8 bg-[#ff4626] text-white rounded-full flex items-center justify-center font-bold text-sm">
                       3
                     </div>
                     <div>
@@ -142,7 +142,7 @@ export function FranchisingContent() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-[#F7C431] text-white rounded-full flex items-center justify-center font-bold text-sm">
+                    <div className="w-8 h-8 bg-[#ff4626] text-white rounded-full flex items-center justify-center font-bold text-sm">
                       4
                     </div>
                     <div>
@@ -162,19 +162,19 @@ export function FranchisingContent() {
             className={`text-center mt-20 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
             style={{ animationDelay: "0.8s" }}
           >
-            <div className="bg-[#F7C431] text-white rounded-lg p-12 max-w-4xl mx-auto">
+            <div className="bg-[#ff4626] text-white rounded-lg p-12 max-w-4xl mx-auto">
               <h3 className="font-bebas-neue text-4xl font-bold mb-4">READY TO GET STARTED?</h3>
               <p className="text-xl mb-8 text-white">
                 Take the first step towards owning your own Fallout franchise today
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-white text-[#F7C431] hover:cursor-pointer hover:bg-gray-100 px-8 py-3 text-lg font-medium">
+                <Button size="lg" className="bg-white text-[#ff4626] hover:cursor-pointer hover:bg-gray-100 px-8 py-3 text-lg font-medium">
                   Download Franchise Kit
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:cursor-pointer hover:text-[#F7C431] px-8 py-3 text-lg font-medium bg-transparent"
+                  className="border-white text-white hover:bg-white hover:cursor-pointer hover:text-[#ff4626] px-8 py-3 text-lg font-medium bg-transparent"
                 >
                   Schedule a Meeting
                 </Button>

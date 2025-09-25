@@ -37,7 +37,7 @@ export function DeliverySection() {
           {/* Left side - "WE DELIVER" */}
           <div className={`text-center lg:text-left ${isVisible ? "animate-slide-in-left" : "opacity-0"}`}>
             <h2 className="font-bebas-neue text-6xl md:text-7xl font-bold text-white mb-4">WE DELIVER</h2>
-            <p className="text-[#F7C431] text-xl font-bold">IN LAHORE</p>
+            <p className="text-[#ff4626] text-xl font-bold">IN LAHORE</p>
           </div>
 
           {/* Center - Delivery bag image */}
@@ -63,9 +63,9 @@ export function DeliverySection() {
               <div className="bg-black border-2 border-white rounded-lg p-6">
                 <div className="font-mono text-4xl md:text-5xl font-bold text-white mb-2">
                   03:00
-                  <span className="text-[#F7C431] text-2xl ml-2">am</span>
+                  <span className="text-[#ff4626] text-2xl ml-2">am</span>
                 </div>
-                <p className="text-[#F7C431] text-lg font-bold">TILL</p>
+                <p className="text-[#ff4626] text-lg font-bold">TILL</p>
               </div>
             </div>
           </div>

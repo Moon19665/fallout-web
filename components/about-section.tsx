@@ -36,7 +36,7 @@ export function AboutSection() {
             </p>
 
             <div className="bg-white rounded-lg p-8 shadow-lg">
-              <h3 className="font-bebas-neue text-2xl font-bold text-black mb-4">THE Fallout DIFFERENCE</h3>
+              <h3 className="font-bebas-neue text-2xl font-bold text-black mb-4">THE FALLOUT DIFFERENCE</h3>
               <p className="text-gray-600 leading-relaxed">
                 At Fallout, we take the smashburger technique to the next level with our signature spicy blend and premium
                 ingredients. Each burger is smashed to perfection on our hot griddle, creating that iconic crispy crust

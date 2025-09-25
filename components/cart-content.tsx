@@ -33,7 +33,7 @@ export function CartContent() {
             </p>
             <Button
               size="lg"
-              className="bg-[#F7C431] hover:bg-[#F7C431] hover:cursor pointer text-white px-8 py-3 text-lg"
+              className="bg-[#ff4626] hover:bg-[#ff4626] hover:cursor pointer text-white px-8 py-3 text-lg"
             >
               <Link href="/menu" className="flex items-center">
                 Start Shopping
@@ -80,12 +80,12 @@ export function CartContent() {
                     <h3 className="font-bold text-lg text-black mb-2">
                       {item.name}
                     </h3>
-                    <p className="text-[#F7C431] font-bold text-lg">
+                    <p className="text-[#ff4626] font-bold text-lg">
                       Rs {item.price}
                     </p>
                     <Link
                       href="/menu"
-                      className="text-[#F7C431] hover:underline flex items-center"
+                      className="text-[#ff4626] hover:underline flex items-center"
                     >
                       <ArrowLeft className="w-4 h-4 mr-1" />
                       Back to Menu
@@ -113,7 +113,7 @@ export function CartContent() {
             </h1>
             <Link
               href="/menu"
-              className="text-[#F7C431] hover:underline flex items-center"
+              className="text-[#ff4626] hover:underline flex items-center"
             >
               <ArrowLeft className="w-4 h-4 mr-1" />
               Continue Shopping
@@ -202,7 +202,7 @@ export function CartContent() {
                               onClick={() =>
                                 handleQuantityChange(item.id, item.quantity - 1)
                               }
-                              className="border-[#F7C431] text-[#F7C431]  hover:bg-[#F7C431] hover:cursor-pointer"
+                              className="border-[#ff4626] text-[#ff4626]  hover:bg-[#ff4626] hover:cursor-pointer"
                             >
                               <Minus className="w-6 h-6" />
                             </Button>
@@ -215,7 +215,7 @@ export function CartContent() {
                               onClick={() =>
                                 handleQuantityChange(item.id, item.quantity + 1)
                               }
-                              className="border-[#F7C431] text-[#F7C431]  hover:bg-[#F7C431] hover:cursor-pointer"
+                              className="border-[#ff4626] text-[#ff4626]  hover:bg-[#ff4626] hover:cursor-pointer"
                             >
                               <Plus className="w-6 h-6 " />
                             </Button>
@@ -282,7 +282,7 @@ export function CartContent() {
               <Link href="/checkout" className="block">
                 <Button
                   size="lg"
-                  className="w-full bg-[#F7C431] hover:bg-[#F7C431] hover:cursor-pointer text-white py-3 text-lg font-bold"
+                  className="w-full bg-[#ff4626] hover:bg-[#ff4626] hover:cursor-pointer text-white py-3 text-lg font-bold"
                 >
                   Proceed to Checkout
                 </Button>
@@ -291,7 +291,7 @@ export function CartContent() {
               <div className="mt-4 text-center">
                 <Link
                   href="/menu"
-                  className="text-[#F7C431] hover:underline text-sm"
+                  className="text-[#ff4626] hover:underline text-sm"
                 >
                   Continue Shopping
                 </Link>

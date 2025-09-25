@@ -8,159 +8,234 @@ import { useCart } from "@/hooks/use-cart"
 import { ItemSelectionModal } from "@/components/item-selection-modal"
 
 const menuItems = {
-  "beef-burgers": [
+  "burgers": [
     {
       id: "spicy-smashdown",
-      name: "Spicy Smashdown",
-      price: 787.5,
-      originalPrice: 875.0,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-cheNtWbQPSA0cc3xrdjE0qV09dJDUU.png",
-      category: "beef-burgers",
+      name: "Chilli Dog",
+      price: 850,
+      originalPrice: 935,
+      image: "/chilli-dog.png",
+      category: "burgers",
       description:
-        "Beef patty smashed with fiery jalapeños, topped with Pepper X sauce, crisp lettuce, diced onions & sriracha mayo in a soft seeded potato bun.",
+        "Steamy Hot Dog with Mexican Beef Filling",
       discount: "10% OFF",
     },
     {
       id: "brim-maniac",
-      name: "Fallout Maniac",
-      price: 2965.5,
-      originalPrice: 3295.0,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "beef-burgers",
+      name: "Mini Vault",
+      price: 999,
+      originalPrice: 1098,
+      image: "/mini-vault.png",
+      category: "burgers",
       description:
-        "5 Patties, 5 Cheese Layers, Caramelised Onions, Our Fallout Sauce & Signature Sauce & Lettuce in a Soft Seeded Potato Bun.",
+        "4 Mini Burgers with in house signature sauce",
       discount: "10% OFF",
     },
     {
       id: "fiery-brimstone",
-      name: "Fiery Falloutstone",
-      price: 688.5,
-      originalPrice: 765.0,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "beef-burgers",
+      name: "Fallout Beast",
+      price: 700,
+      originalPrice: 770.0,
+      image: "/fallout-beast.webp",
+      category: "burgers",
       description:
-        "Jalapeños, Cheese, Lettuce, Wild West Sauce, Signature Sauce & Lettuce in a Soft Seeded Potato Bun.",
+        "Juicy Burger with pepperoni touch",
       discount: "10% OFF",
     },
     {
       id: "the-meltdown",
-      name: "The Meltdown",
-      price: 750,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "beef-burgers",
-      description: "Juicy beef patty with melted cheese and special sauce",
-    },
-    {
-      id: "sweet-chili-titan",
-      name: "Sweet Chili Titan",
-      price: 750,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "beef-burgers",
-      description: "Sweet and spicy combination with crispy onions",
-    },
-    {
-      id: "smashed-showdown",
-      name: "Smashed Showdown",
-      price: 850,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "beef-burgers",
-      description: "Double smashed patties with premium toppings",
-    },
-  ],
-  "chicken-burger": [
-    {
-      id: "fiery-chicken-brimstone",
-      name: "Fiery Chicken Falloutstone",
+      name: "Zinger 111",
       price: 650,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "chicken-burger",
-      description: "Spicy chicken patty with fiery sauce",
+      image: "/zinger.png",
+      category: "burgers",
+      description: "",
+    },
+    // {
+    //   id: "sweet-chili-titan",
+    //   name: "Sweet Chili Titan",
+    //   price: 750,
+    //   image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
+    //   category: "beef-burgers",
+    //   description: "Sweet and spicy combination with crispy onions",
+    // },
+    // {
+    //   id: "smashed-showdown",
+    //   name: "Smashed Showdown",
+    //   price: 850,
+    //   image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
+    //   category: "beef-burgers",
+    //   description: "Double smashed patties with premium toppings",
+    // },
+  ],
+  "taco": [
+    {
+      id: "soft-taco",
+      name: "Soft Shell (x2)",
+      price: 899,
+      image: "/soft-shell.png",
+      category: "taco",
+      description: "With mexican Sauce",
     },
     {
-      id: "chicken-meltdown",
-      name: "Chicken Meltdown",
-      price: 700,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "chicken-burger",
-      description: "Tender chicken with melted cheese",
+      id: "hard-taco",
+      name: "Hard Shell (x2)",
+      price: 650,
+      image: "/hard-shell.png",
+      category: "taco",
+      description: "With grilled chicken and special Mexican sauce",
+    },
+    // {
+    //   id: "chicken-run",
+    //   name: "Chicken Run",
+    //   price: 550,
+    //   image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
+    //   category: "chicken-burger",
+    //   description: "Classic chicken burger with fresh toppings",
+    // },
+  ],
+  "wraps": [
+    {
+      id: "sWrap",
+      name: "Small Wrap",
+      price: 450,
+      image: "/swrap.webp",
+      category: "wraps",
+      description: "",
     },
     {
-      id: "chicken-run",
-      name: "Chicken Run",
-      price: 550,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "chicken-burger",
-      description: "Classic chicken burger with fresh toppings",
+      id: "bWrap",
+      name: "Large Wrap",
+      price: 650  ,
+      image: "/lwrap.webp",
+      category: "wraps",
+      description: "",
     },
   ],
-  "brim-junior": [
+  "sauces": [
     {
-      id: "mini-brim",
-      name: "Mini Fallout",
-      price: 400,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "brim-junior",
-      description: "Kid-sized burger perfect for little ones",
+      id: "fallout-special",
+      name: "Fallout Special Sauce",
+      price: 100,
+      image: "special-sauce.webp",
+      category: "sauces",
+      description: "",
+    },
+     {
+      id: "cocktail-sauce",
+      name: "Cocktail Sauce",
+      price: 100,
+      image: "cocktail-sauce.jfif",
+      category: "sauces",
+      description: "",
+    }, {
+      id: "Atomic-sauce",
+      name: "Atomic Sauce",
+      price: 100,
+      image: "atomi-sauce.png",
+      category: "sauces",
+      description: "",
+    }, {
+      id: "kids-special",
+      name: "Kids Special Sauce",
+      price: 100,
+      image: "kids-sauce.webp",
+      category: "sauces",
+      description: "",
+    }, {
+      id: "garlic-sauce",
+      name: "Garlic Sauce",
+      price: 100,
+      image: "garlic-sauce.avif",
+      category: "sauces",
+      description: "",
+    }, {
+      id: "honey-sauce",
+      name: "Honey Sauce",
+      price: 100,
+      image: "honey-sauce.webp",
+      category: "sauces",
+      description: "",
+    }, {
+      id: "chipotle-sauce",
+      name: "Chipotle Sauce",
+      price: 100,
+      image: "chipotle-sauce.png",
+      category: "sauces",
+      description: "",
     },
   ],
-  brimwich: [
+  "survival-pack": [
     {
-      id: "classic-brimwich",
-      name: "Classic Falloutwich",
-      price: 500,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "brimwich",
-      description: "Our signature sandwich with premium ingredients",
+      id: "meal-box-one",
+      name: "Burger, Fries, Chocolate Milk & Toy",
+      price: 850,
+      image: "/meal-one.png",
+      category: "survival-pack",
+      description: "",
+    },
+    {
+      id: "meal-box-two",
+      name: "Chicken Tenders, Fries, Chocolate Milk & Toy",
+      price: 850,
+      image: "/meal-two.png",
+      category: "survival-pack",
+      description: "",
     },
   ],
-  "naked-box": [
+  "appetisers": [
     {
-      id: "naked-chicken-box",
-      name: "Naked Chicken Box",
-      price: 800,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "naked-box",
-      description: "Crispy chicken pieces with sides",
-    },
-  ],
-  "hot-dogs": [
-    {
-      id: "classic-hot-dog",
-      name: "Classic Hot Dog",
-      price: 400,
-      image: "/loaded-hot-dog-with-toppings--professional-food-ph.jpg",
-      category: "hot-dogs",
-      description: "Traditional hot dog with mustard and ketchup",
+      id: "vault-fries",
+      name: "Small Loaded Fries",
+      price: 450,
+      image: "/sfries.png",
+      category: "appetisers",
+      description: "Loaded Fries with spicy or normal",
     },
     {
       id: "smokin-dog",
-      name: "Smokin Dog",
-      price: 500,
-      image: "/loaded-hot-dog-with-toppings--professional-food-ph.jpg",
-      category: "hot-dogs",
-      description: "Smoky flavored hot dog with special sauce",
+      name: "Large Loaded Fries",
+      price: 650,
+      image: "/lfries.webp",
+      category: "appetisers",
+      description: "Loaded Fries with spicy or normal",
     },
-  ],
-  "curly-fries": [
-    {
-      id: "loaded-curly-fries",
-      name: "Loaded Curly Fries",
+     {
+      id: "porcorn-bite-small",
+      name: "porcorn Bite (S)",
       price: 450,
-      image: "/loaded-fries-with-cheese-and-toppings--professio.jpg",
-      category: "curly-fries",
-      description: "Crispy curly fries loaded with cheese and toppings",
+      image: "/lpopcorn.png",
+      category: "appetisers",
+      description: "Popcorn Chicken with Fries",
     },
-  ],
-  fries: [
     {
-      id: "classic-fries",
-      name: "Classic Fries",
-      price: 300,
-      image: "/loaded-fries-with-cheese-and-toppings--professio.jpg",
-      category: "fries",
-      description: "Golden crispy fries",
+      id: "porcorn-bite-large",
+      name: "porcorn Bite (L)",
+      price: 650,
+      image: "/spopcorn.png",
+      category: "appetisers",
+      description: "Popcorn Chicken with Fries",
     },
   ],
+  // "curly-fries": [
+  //   {
+  //     id: "loaded-curly-fries",
+  //     name: "Loaded Curly Fries",
+  //     price: 450,
+  //     image: "/loaded-fries-with-cheese-and-toppings--professio.jpg",
+  //     category: "curly-fries",
+  //     description: "Crispy curly fries loaded with cheese and toppings",
+  //   },
+  // ],
+  // "fries": [
+  //   {
+  //     id: "classic-fries",
+  //     name: "Classic Fries",
+  //     price: 300,
+  //     image: "/loaded-fries-with-cheese-and-toppings--professio.jpg",
+  //     category: "fries",
+  //     description: "Golden crispy fries",
+  //   },
+  // ],
 }
 
 type Category = {
@@ -171,12 +246,12 @@ type Category = {
 }
 
 const categories: Category[] = [
-  { id: "beef-burgers", name: "BURGERS", emoji: "🍔", count: 6 },
-  { id: "chicken-burger", name: "TACOS", emoji: "🌮", count: 3 },
-  { id: "brim-junior", name: "WRAPS", emoji: "🌯", count: 1 },
-  { id: "brimwich", name: "SAUCES", emoji: "🍶", count: 1 },
-  { id: "naked-box", name: "SURVIVAL PACK / MINI MEALS", emoji: "🍱", count: 1 },
-  { id: "hot-dogs", name: "APPETISERS", emoji: "🌭", count: 2 },
+  { id: "burgers", name: "BURGERS", emoji: "🍔", count: 6 },
+  { id: "taco", name: "TACOS", emoji: "🌮", count: 3 },
+  { id: "wraps", name: "WRAPS", emoji: "🌯", count: 1 },
+  { id: "sauces", name: "SAUCES", emoji: "🍶", count: 7 },
+  { id: "survival-pack", name: "SURVIVAL PACK / MINI MEALS", emoji: "🍱", count: 1 },
+  { id: "appetisers", name: "APPETISERS", emoji: "🌭", count: 2 },
   // { id: "curly-fries", name: "CURLY FRIES", count: 1 },
   // { id: "fries", name: "FRIES", count: 1 },
 ]
@@ -272,14 +347,14 @@ export function MenuContent() {
           <div className="relative">
             <button
               onClick={() => scrollCategories("left")}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg rounded-full p-2 hover:bg-gray-50"
+              className="absolute left-0 top-3/12 -translate-y-1/2 z-10 bg-white shadow-lg rounded-full p-2 hover:bg-gray-50"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
 
             <div
               id="category-slider"
-              className="flex space-x-8 overflow-x-auto scrollbar-hide px-12"
+              className="flex  space-x-8 overflow-x-auto scrollbar-hide px-12"
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
               {allCategories.map((category) => (
@@ -288,13 +363,13 @@ export function MenuContent() {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`flex-shrink-0 text-center pb-4 hover:cursor-pointer border-b-2 transition-colors ${
                     selectedCategory === category.id
-                      ? "border-[#F7C431] text-black font-bold"
+                      ? "border-[#ff4626] text-black font-bold"
                       : "border-transparent text-gray-600 hover:text-black"
                   }`}
                 >
                   <div className="flex items-center space-x-2 whitespace-nowrap">
                     {category.emoji && <span>{category.emoji}</span>}
-                    <span className="text-sm font-medium">{category.name}</span>
+                    <span className="text-md font-medium">{category.name}</span>
                   </div>
                 </button>
               ))}
@@ -302,7 +377,7 @@ export function MenuContent() {
 
             <button
               onClick={() => scrollCategories("right")}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg rounded-full p-2 hover:bg-gray-50"
+              className="absolute right-0 top-3/12 -translate-y-1/2 z-10 bg-white shadow-lg rounded-full p-2 hover:bg-gray-50"
             >
               <ChevronRight className="w-5 h-5" />
             </button>
@@ -353,14 +428,14 @@ export function MenuContent() {
                   >
                     {/* Discount Badge */}
                     {item.discount && (
-                      <div className="absolute top-4 left-4 z-10 bg-[#F7C431] text-white px-3 py-1 rounded-lg text-sm font-bold">
+                      <div className="absolute top-4 left-4 z-10 bg-[#ff4626] text-white px-3 py-1 rounded-lg text-sm font-bold">
                         {item.discount}
                       </div>
                     )}
 
                     {/* Quantity Badge */}
                     {quantity > 0 && (
-                      <div className="absolute top-4 right-4 z-10 bg-[#F7C431] text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
+                      <div className="absolute top-4 right-4 z-10 bg-[#ff4626] text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
                         {quantity}
                       </div>
                     )}
@@ -370,13 +445,13 @@ export function MenuContent() {
                       <img
                         src={item.image || "/placeholder.svg"}
                         alt={item.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full  object-contain group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
 
                     {/* Item Details */}
                     <div className="p-6">
-                      <h3 className="font-bold text-xl text-black mb-2 group-hover:text-[#F7C431] transition-colors">
+                      <h3 className="font-bold text-xl text-black mb-2 group-hover:text-[#ff4626] transition-colors">
                         {item.name}
                       </h3>
                       <p className="text-gray-600 text-sm mb-4 line-clamp-2">{item.description}</p>
@@ -384,7 +459,7 @@ export function MenuContent() {
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-2">
                           {item.originalPrice && (
-                            <span className="text-[#F7C431] line-through text-sm">
+                            <span className="text-[#ff4626] line-through text-sm">
                               Rs. {item.originalPrice.toFixed(2)}
                             </span>
                           )}
@@ -393,7 +468,7 @@ export function MenuContent() {
 
                         <Button
                           size="sm"
-                          className="bg-[#F7C431] hover:cursor-pointer hover:bg-[#F7C431] text-white"
+                          className="bg-[#ff4626] hover:cursor-pointer hover:bg-[#ff4626] text-white"
                           onClick={(e) => {
                             e.stopPropagation()
                             handleItemClick(item)

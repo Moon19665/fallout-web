@@ -12,7 +12,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-orange-100 via-red-50 to-orange-200 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br from-orange-100 via-red-50 to-[#ff4626] overflow-hidden">
       <Navigation/>
       {/* Background decorative elements */}
       <div className="absolute inset-0">
@@ -53,17 +53,17 @@ export function HeroSection() {
 
             {/* Main heading */}
             <div className="space-y-4">
-              <h1 className="font-bebas-neue text-3xl md:text-4xl lg:text-6xl font-bold text-[#F7C431] leading-none tracking-tight hover:scale-105 transition-transform duration-300 cursor-default">
+              <h1 className="font-bebas-neue text-3xl md:text-4xl lg:text-6xl font-bold text-[#ff4626] leading-none tracking-tight hover:scale-105 transition-transform duration-300 cursor-default">
                 CHILLI 🌶️
               </h1>
               <h1
-                className="font-bebas-neue text-3xl md:text-4xl lg:text-6xl font-bold text-[#F7C431] leading-none tracking-tight hover:scale-105 transition-transform duration-300 cursor-default"
+                className="font-bebas-neue text-3xl md:text-4xl lg:text-6xl font-bold text-[#ff4626] leading-none tracking-tight hover:scale-105 transition-transform duration-300 cursor-default"
                 style={{ animationDelay: "0.2s" }}
               >
                 SMASH
               </h1>
               <h1
-                className="font-bebas-neue text-3xl md:text-4xl lg:text-6xl font-bold text-[#F7C431] leading-none tracking-tight hover:scale-105 transition-transform duration-300 cursor-default"
+                className="font-bebas-neue text-3xl md:text-4xl lg:text-6xl font-bold text-[#ff4626] leading-none tracking-tight hover:scale-105 transition-transform duration-300 cursor-default"
                 style={{ animationDelay: "0.4s" }}
               >
                 FALLDOWN

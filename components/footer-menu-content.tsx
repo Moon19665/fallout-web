@@ -10,167 +10,247 @@ import { useToast } from "@/hooks/use-toast"
 import { ItemSelectionModal } from "@/components/item-selection-modal"
 
 const menuItems = {
-  burgers: [
+  "burgers": [
     {
-      id: "burger-1",
-      name: "Fallout Burger",
-      price: 600,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "burgers",
-      description: "Make any burger a meal burger - A Fallout best burger compared to Twin Venture",
-    },
-    {
-      id: "burger-2",
-      name: "The Meltdown",
-      price: 750,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "burgers",
-      description: "Juicy beef patty with melted cheese and special sauce",
-    },
-    {
-      id: "burger-3",
-      name: "Fiery Falloutstone",
-      price: 800,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "burgers",
-      description: "Our spiciest burger with jalapeños and hot sauce",
-    },
-    {
-      id: "burger-4",
-      name: "Sweet Chili Titan",
-      price: 750,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "burgers",
-      description: "Sweet and spicy combination with crispy onions",
-    },
-    {
-      id: "burger-5",
-      name: "Smashed Showdown",
+      id: "spicy-smashdown",
+      name: "Chilli Dog",
       price: 850,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
+      originalPrice: 935,
+      image: "/chilli-dog.png",
       category: "burgers",
-      description: "Double smashed patties with premium toppings",
+      description:
+        "Steamy Hot Dog with Mexican Beef Filling",
+      discount: "10% OFF",
     },
     {
-      id: "burger-6",
-      name: "Bro Baller",
-      price: 1000,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
+      id: "brim-maniac",
+      name: "Mini Vault",
+      price: 999,
+      originalPrice: 1098,
+      image: "/mini-vault.png",
       category: "burgers",
-      description: "The ultimate burger experience with triple patties",
+      description:
+        "4 Mini Burgers with in house signature sauce",
+      discount: "10% OFF",
     },
     {
-      id: "burger-7",
-      name: "Fiery Chicken Falloutstone",
-      price: 650,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "burgers",
-      description: "Spicy chicken patty with fiery sauce",
-    },
-    {
-      id: "burger-8",
-      name: "Fallout Maniac",
-      price: 1200,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
-      category: "burgers",
-      description: "Our biggest and boldest burger creation",
-    },
-    {
-      id: "burger-9",
-      name: "Chicken Meltdown",
+      id: "fiery-brimstone",
+      name: "Fallout Beast",
       price: 700,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
+      originalPrice: 770.0,
+      image: "/fallout-beast.webp",
       category: "burgers",
-      description: "Tender chicken with melted cheese",
+      description:
+        "Juicy Burger with pepperoni touch",
+      discount: "10% OFF",
     },
     {
-      id: "burger-10",
-      name: "Chicken Run",
-      price: 550,
-      image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
+      id: "the-meltdown",
+      name: "Zinger 111",
+      price: 650,
+      image: "/zinger.png",
       category: "burgers",
-      description: "Classic chicken burger with fresh toppings",
+      description: "",
     },
+    // {
+    //   id: "sweet-chili-titan",
+    //   name: "Sweet Chili Titan",
+    //   price: 750,
+    //   image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
+    //   category: "beef-burgers",
+    //   description: "Sweet and spicy combination with crispy onions",
+    // },
+    // {
+    //   id: "smashed-showdown",
+    //   name: "Smashed Showdown",
+    //   price: 850,
+    //   image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
+    //   category: "beef-burgers",
+    //   description: "Double smashed patties with premium toppings",
+    // },
   ],
-  hotdogs: [
+  "taco": [
     {
-      id: "hotdog-1",
-      name: "Classic Hot Dog",
-      price: 400,
-      image: "/loaded-hot-dog-with-toppings--professional-food-ph.jpg",
-      category: "hotdogs",
-      description: "Traditional hot dog with mustard and ketchup",
+      id: "soft-taco",
+      name: "Soft Shell (x2)",
+      price: 899,
+      image: "/soft-shell.png",
+      category: "taco",
+      description: "With mexican Sauce",
     },
     {
-      id: "hotdog-2",
-      name: "Smokin Dog",
-      price: 500,
-      image: "/loaded-hot-dog-with-toppings--professional-food-ph.jpg",
-      category: "hotdogs",
-      description: "Smoky flavored hot dog with special sauce",
+      id: "hard-taco",
+      name: "Hard Shell (x2)",
+      price: 650,
+      image: "/hard-shell.png",
+      category: "taco",
+      description: "With grilled chicken and special Mexican sauce",
     },
+    // {
+    //   id: "chicken-run",
+    //   name: "Chicken Run",
+    //   price: 550,
+    //   image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
+    //   category: "chicken-burger",
+    //   description: "Classic chicken burger with fresh toppings",
+    // },
+  ],
+  "wraps": [
     {
-      id: "hotdog-3",
-      name: "Street Dog",
+      id: "sWrap",
+      name: "Small Wrap",
       price: 450,
-      image: "/loaded-hot-dog-with-toppings--professional-food-ph.jpg",
-      category: "hotdogs",
-      description: "Street-style hot dog with onions and peppers",
+      image: "/swrap.webp",
+      category: "wraps",
+      description: "",
+    },
+    {
+      id: "bWrap",
+      name: "Large Wrap",
+      price: 650  ,
+      image: "/lwrap.webp",
+      category: "wraps",
+      description: "",
     },
   ],
-  loadedfries: [
+  "sauces": [
     {
-      id: "fries-1",
-      name: "Loaded Cheese Fries",
+      id: "fallout-special",
+      name: "Fallout Special Sauce",
+      price: 100,
+      image: "special-sauce.webp",
+      category: "sauces",
+      description: "",
+    },
+     {
+      id: "cocktail-sauce",
+      name: "Cocktail Sauce",
+      price: 100,
+      image: "cocktail-sauce.jfif",
+      category: "sauces",
+      description: "",
+    }, {
+      id: "Atomic-sauce",
+      name: "Atomic Sauce",
+      price: 100,
+      image: "atomi-sauce.png",
+      category: "sauces",
+      description: "",
+    }, {
+      id: "kids-special",
+      name: "Kids Special Sauce",
+      price: 100,
+      image: "kids-sauce.webp",
+      category: "sauces",
+      description: "",
+    }, {
+      id: "garlic-sauce",
+      name: "Garlic Sauce",
+      price: 100,
+      image: "garlic-sauce.avif",
+      category: "sauces",
+      description: "",
+    }, {
+      id: "honey-sauce",
+      name: "Honey Sauce",
+      price: 100,
+      image: "honey-sauce.webp",
+      category: "sauces",
+      description: "",
+    }, {
+      id: "chipotle-sauce",
+      name: "Chipotle Sauce",
+      price: 100,
+      image: "chipotle-sauce.png",
+      category: "sauces",
+      description: "",
+    },
+  ],
+  "survival-pack": [
+    {
+      id: "meal-box-one",
+      name: "Burger, Fries, Chocolate Milk & Toy",
+      price: 850,
+      image: "/meal-one.png",
+      category: "survival-pack",
+      description: "",
+    },
+    {
+      id: "meal-box-two",
+      name: "Chicken Tenders, Fries, Chocolate Milk & Toy",
+      price: 850,
+      image: "/meal-two.png",
+      category: "survival-pack",
+      description: "",
+    },
+  ],
+  "appetisers": [
+    {
+      id: "vault-fries",
+      name: "Small Loaded Fries",
       price: 450,
-      image: "/loaded-fries-with-cheese-and-toppings--professio.jpg",
-      category: "loadedfries",
-      description: "Crispy fries loaded with melted cheese and bacon bits",
+      image: "/sfries.png",
+      category: "appetisers",
+      description: "Loaded Fries with spicy or normal",
     },
     {
-      id: "fries-2",
-      name: "Spicy Jalapeño Fries",
-      price: 500,
-      image: "/loaded-fries-with-cheese-and-toppings--professio.jpg",
-      category: "loadedfries",
-      description: "Fries topped with jalapeños and spicy sauce",
+      id: "smokin-dog",
+      name: "Large Loaded Fries",
+      price: 650,
+      image: "/lfries.webp",
+      category: "appetisers",
+      description: "Loaded Fries with spicy or normal",
+    },
+     {
+      id: "porcorn-bite-small",
+      name: "porcorn Bite (S)",
+      price: 450,
+      image: "/lpopcorn.png",
+      category: "appetisers",
+      description: "Popcorn Chicken with Fries",
     },
     {
-      id: "fries-3",
-      name: "BBQ Ranch Fries",
-      price: 550,
-      image: "/loaded-fries-with-cheese-and-toppings--professio.jpg",
-      category: "loadedfries",
-      description: "Fries with BBQ sauce and ranch dressing",
+      id: "porcorn-bite-large",
+      name: "porcorn Bite (L)",
+      price: 650,
+      image: "/spopcorn.png",
+      category: "appetisers",
+      description: "Popcorn Chicken with Fries",
     },
   ],
-  desserts: [
-    {
-      id: "dessert-1",
-      name: "Chocolate Brownie",
-      price: 350,
-      image: "/chocolate-brownie-dessert--professional-food-pho.jpg",
-      category: "desserts",
-      description: "Rich chocolate brownie with vanilla ice cream",
-    },
-    {
-      id: "dessert-2",
-      name: "Vanilla Milkshake",
-      price: 300,
-      image: "/vanilla-milkshake--professional-food-photography.jpg",
-      category: "desserts",
-      description: "Creamy vanilla milkshake topped with whipped cream",
-    },
-  ],
+  // "curly-fries": [
+  //   {
+  //     id: "loaded-curly-fries",
+  //     name: "Loaded Curly Fries",
+  //     price: 450,
+  //     image: "/loaded-fries-with-cheese-and-toppings--professio.jpg",
+  //     category: "curly-fries",
+  //     description: "Crispy curly fries loaded with cheese and toppings",
+  //   },
+  // ],
+  // "fries": [
+  //   {
+  //     id: "classic-fries",
+  //     name: "Classic Fries",
+  //     price: 300,
+  //     image: "/loaded-fries-with-cheese-and-toppings--professio.jpg",
+  //     category: "fries",
+  //     description: "Golden crispy fries",
+  //   },
+  // ],
 }
 
 const categories = [
-  { id: "burgers", name: "Burgers", count: 10 },
-  { id: "hotdogs", name: "Hot Dogs", count: 3 },
-  { id: "loadedfries", name: "Loaded Fries", count: 3 },
-  { id: "desserts", name: "Desserts", count: 2 },
-  { id: "brimjunior", name: "Fallout Junior", count: 0 },
+  { id: "burgers", name: "BURGERS", emoji: "🍔", count: 6 },
+  { id: "taco", name: "TACOS", emoji: "🌮", count: 3 },
+  { id: "wraps", name: "WRAPS", emoji: "🌯", count: 1 },
+  { id: "sauces", name: "SAUCES", emoji: "🍶", count: 7 },
+  { id: "survival-pack", name: "SURVIVAL PACK / MINI MEALS", emoji: "🍱", count: 1 },
+  { id: "appetisers", name: "APPETISERS", emoji: "🌭", count: 2 },
+  // { id: "curly-fries", name: "CURLY FRIES", count: 1 },
+  // { id: "fries", name: "FRIES", count: 1 },
 ]
+
 
 export function FooterMenuContent() {
   const [selectedCategory, setSelectedCategory] = useState("burgers")
@@ -265,7 +345,7 @@ export function FooterMenuContent() {
                     className="text-sm"
                   />
                 </div>
-                <Button className="w-full mt-3 bg-black text-white hover:bg-gray-800">Apply</Button>
+                <Button className="w-full text-lg mt-3 bg-[#ff4626] text-white hover:bg-[#ff4626] hover:cursor-pointer">Apply</Button>
               </div>
             </div>
           </div>
@@ -296,7 +376,7 @@ export function FooterMenuContent() {
                   >
                     {/* Item Image */}
                     <div className="relative mb-4">
-                      <div className="w-48 h-48 mx-auto rounded-full overflow-hidden bg-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                      <div className="w-64 h-56 mx-auto rounded p-2 overflow-hidden bg-none   transition-all duration-300 group-hover:scale-105">
                         <img
                           src={item.image || "/placeholder.svg"}
                           alt={item.name}
@@ -312,7 +392,7 @@ export function FooterMenuContent() {
 
                     {/* Item Details */}
                     <div className="space-y-2">
-                      <h3 className="font-bold text-lg text-black group-hover:text-[var(--color-brim-red)] transition-colors">
+                      <h3 className="font-bold text-lg text-black group-hover:text-[#ff4626] transition-colors">
                         {item.name}
                       </h3>
                       <p className="text-sm text-gray-600 font-medium">From Rs {item.price}</p>
@@ -328,7 +408,7 @@ export function FooterMenuContent() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-black text-black hover:bg-black hover:text-white bg-transparent"
+                  className="border-[#ff4626] text-[#ff4626] hover:cursor-pointer text-lg font-bold hover:bg-[#ff4626] hover:text-white bg-transparent"
                 >
                   Load More Items
                 </Button>

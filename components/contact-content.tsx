@@ -36,7 +36,7 @@ export function ContactContent() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-rfrom-[#F7C431] via-[#D1991C] to-[#B58215] overflow-hidden">
+      <section className="relative h-96 bg-gradient-to-rfrom-[#ff4626] via-[#D1991C] to-[#B58215] overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -44,7 +44,7 @@ export function ContactContent() {
             alt="Contact Us Background"
             className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-[#F7C431]/70"></div>
+          <div className="absolute inset-0 bg-[#ff4626]/70"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-center">
@@ -151,7 +151,7 @@ export function ContactContent() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-[#F7C431] text-white hover:bg-white hover:text-[#F7C431] hover:border-1 hover:border-[#F7C431] hover:cursor-pointer py-3 text-lg font-medium"
+                    className="w-full bg-[#ff4626] text-white hover:bg-white hover:text-[#ff4626] hover:border-1 hover:border-[#ff4626] hover:cursor-pointer py-3 text-lg font-medium"
                   >
                     <Send className="h-5 w-5 mr-2" />
                     Submit Message
@@ -162,7 +162,7 @@ export function ContactContent() {
 
             {/* Contact Information */}
             <div className={`${isVisible ? "animate-slide-in-right" : "opacity-0"}`}>
-              <div className="bg-[#F7C431] text-white rounded-lg p-8 h-full">
+              <div className="bg-[#ff4626] text-white rounded-lg p-8 h-full">
                 <h2 className="font-bebas-neue text-3xl font-bold mb-2">GET IN TOUCH</h2>
                 <p className="text-white mb-8">
                   Contact us about anything related to our company or services. We'll do our best to get back to you as

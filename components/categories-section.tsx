@@ -7,42 +7,42 @@ const categories = [
   {
     id: "burgers",
     name: "BURGERS",
-    image: "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
+    image: "/zinger.png",
   },
   {
     id: "hot-dogs",
     name: "TACOS",
-    image: "/loaded-hot-dog-with-toppings--professional-food-ph.jpg",
+    image: "/soft-shell.png",
   },
   {
     id: "loaded-fries",
     name: "WRAPS",
-    image: "/loaded-fries-with-cheese-and-toppings--professiona.jpg",
+    image: "/swrap.webp",
   },
   {
     id: "brimwich",
     name: "SAUCES",
-    image: "/gourmet-sandwich-wrap--professional-food-photograp.jpg",
+    image: "/special-sauce.webp",
   },
   {
     id: "brim-junior",
     name: "SURVIVAL PACK",
-    image: "/kids-meal-box-with-burger-and-fries--professional-.jpg",
+    image: "/meal-two.png",
   },
   {
     id: "sips-scoops",
     name: "APPETISERS",
-    image: "/milkshake-and-ice-cream--professional-food-photogr.jpg",
+    image: "/lfries.webp",
   },
   {
     id: "desserts",
     name: "MINI MEALS",
-    image: "/chocolate-dessert--professional-food-photography.jpg",
+    image: "/meal-one.png",
   },
   {
     id: "naked-box",
-    name: "EXTRA TOPPINGS",
-    image: "/meal-box-with-various-items--professional-food-pho.jpg",
+    name: "TOPPINGS",
+    image: "/honey-sauce.webp",
   },
 ]
 
@@ -84,9 +84,9 @@ export function CategoriesSection() {
               className={`group ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="bg-[#F7C431] rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className=" rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 ">
                 {/* Category image */}
-                <div className="aspect-square bg-[#F7C431] flex items-center justify-center p-4">
+                <div className="aspect-square  flex items-center justify-center p-4">
                   <img
                     src={category.image || "/placeholder.svg"}
                     alt={category.name}
@@ -95,8 +95,8 @@ export function CategoriesSection() {
                 </div>
 
                 {/* Category name */}
-                <div className="p-4 text-center">
-                  <h3 className="font-bold text-white text-sm md:text-base tracking-wider">{category.name}</h3>
+                <div className="p-4 m-2 border-3 border-[#ff4626] rounded text-center">
+                  <h3 className="font-bold text-[#ff4626] text-sm md:text-xl tracking-wider">{category.name}</h3>
                 </div>
               </div>
             </Link>
