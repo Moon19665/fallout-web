@@ -39,11 +39,11 @@ const categories = [
     name: "MINI MEALS",
     image: "/meal-one.png",
   },
-  {
-    id: "naked-box",
-    name: "TOPPINGS",
-    image: "/honey-sauce.webp",
-  },
+  // {
+  //   id: "naked-box",
+  //   name: "TOPPINGS",
+  //   image: "/honey-sauce.webp",
+  // },
 ]
 
 export function CategoriesSection() {

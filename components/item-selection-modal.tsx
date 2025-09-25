@@ -33,43 +33,41 @@ const sizeOptions = [
 ]
 
 const mealOptions = [
-  { id: "fries-drink", name: "Fries + Drink", price: 200 },
-  { id: "loaded-fries-drink", name: "Loaded Fries + Drink", price: 350 },
+  { id: "fries-drink", name: "Fries + Drink", price: 350 },
+  { id: "loaded-fries-drink", name: "Loaded Fries + Drink", price: 650 },
 ]
 
 const extraToppings = [
-  { id: "extra-cheese", name: "Extra Cheese", price: 50 },
-  { id: "extra-bacon", name: "Extra Bacon", price: 80 },
-  { id: "extra-patty", name: "Extra Patty", price: 200 },
-  { id: "jalapeños", name: "Jalapeños", price: 30 },
-  { id: "onions", name: "Grilled Onions", price: 25 },
-  { id: "pickles", name: "Extra Pickles", price: 20 },
-  { id: "lettuce", name: "Extra Lettuce", price: 15 },
-  { id: "tomato", name: "Extra Tomato", price: 20 },
-  { id: "mushrooms", name: "Mushrooms", price: 40 },
-  { id: "avocado", name: "Avocado", price: 60 },
+  { id: "fallout-special", name: "Fallout Special Sauce", price: 100 },
+  { id: "cocktail", name: "Cocktail Special Sauce", price: 100 },
+  { id: "kids-special", name: "Kids Special Sauce", price: 100 },
+  { id: "garlic", name: "Garlic Sauce", price: 100 },
+  { id: "atomic", name: "Atomic Sauce", price: 100 },
+  { id: "honey-mustard", name: "Honey Mustard Sauce", price: 100 },
+  { id: "chipotle", name: "Chipotle Sauce", price: 100 },
+ 
 ]
 
 const frequentlyBoughtTogether = [
   {
     id: "loaded-fries",
-    name: "Loaded Cheese Fries",
+    name: "Loaded Fries",
     price: 450,
     image: "/loaded-fries-with-cheese-and-toppings--professio.jpg",
   },
   {
-    id: "vanilla-shake",
-    name: "Vanilla Milkshake",
-    price: 300,
+    id: "popcorn",
+    name: "Popcorn Chicken",
+    price: 450,
     image: "/vanilla-milkshake--professional-food-photography.jpg",
   },
-  { id: "chicken-wings", name: "Buffalo Wings", price: 550, image: "/buffalo-wings.png" },
-  { id: "onion-rings", name: "Onion Rings", price: 350, image: "/crispy-onion-rings.png" },
-  { id: "mozzarella-sticks", name: "Mozzarella Sticks", price: 400, image: "/mozzarella-sticks.png" },
-  { id: "garlic-bread", name: "Garlic Bread", price: 250, image: "/garlic-bread.png" },
-  { id: "coleslaw", name: "Coleslaw", price: 200, image: "/creamy-coleslaw.png" },
-  { id: "chocolate-shake", name: "Chocolate Shake", price: 320, image: "/chocolate-milkshake.png" },
-  { id: "strawberry-shake", name: "Strawberry Shake", price: 320, image: "/strawberry-milkshake.jpg" },
+  { id: "combo", name: "Plain Fries", price: 450, image: "/buffalo-wings.png" },
+  // { id: "onion-rings", name: "Onion Rings", price: 350, image: "/crispy-onion-rings.png" },
+  // { id: "mozzarella-sticks", name: "Mozzarella Sticks", price: 400, image: "/mozzarella-sticks.png" },
+  // { id: "garlic-bread", name: "Garlic Bread", price: 250, image: "/garlic-bread.png" },
+  // { id: "coleslaw", name: "Coleslaw", price: 200, image: "/creamy-coleslaw.png" },
+  // { id: "chocolate-shake", name: "Chocolate Shake", price: 320, image: "/chocolate-milkshake.png" },
+  // { id: "strawberry-shake", name: "Strawberry Shake", price: 320, image: "/strawberry-milkshake.jpg" },
 ]
 
 export function ItemSelectionModal({ item, isOpen, onClose }: ItemSelectionModalProps) {

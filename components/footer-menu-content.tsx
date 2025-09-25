@@ -246,7 +246,7 @@ const categories = [
   { id: "wraps", name: "WRAPS", emoji: "🌯", count: 1 },
   { id: "sauces", name: "SAUCES", emoji: "🍶", count: 7 },
   { id: "survival-pack", name: "SURVIVAL PACK / MINI MEALS", emoji: "🍱", count: 1 },
-  { id: "appetisers", name: "APPETISERS", emoji: "🌭", count: 2 },
+  { id: "appetisers", name: "Fries", emoji: "🌭", count: 2 },
   // { id: "curly-fries", name: "CURLY FRIES", count: 1 },
   // { id: "fries", name: "FRIES", count: 1 },
 ]
