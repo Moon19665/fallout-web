@@ -31,7 +31,7 @@ const categories = [
   },
   {
     id: "sips-scoops",
-    name: "APPETISERS",
+    name: "FRIES",
     image: "/lfries.webp",
   },
   {
