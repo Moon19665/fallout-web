@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Phone, Mail } from "lucide-react"
+import Link from "next/link";
+import { Phone, Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -9,9 +9,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Logo and brand */}
           <div className="col-span-1 md:col-span-1">
-            <div className="bg-[#ff4626] text-white px-4 py-2  text-2xl font-bold tracking-wider inline-block mb-4">
+            {/* <div className="bg-[#FF5900] text-white px-4 py-2  text-2xl font-bold tracking-wider inline-block mb-4">
               Fallout
-            </div>
+            </div> */}
+            <img src="/logo.svg" alt="fallout Logo" className="w-54" />
           </div>
 
           {/* Site Links */}
@@ -19,27 +20,42 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4 text-white">Site Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   HOME
                 </Link>
               </li>
               <li>
-                <Link href="/menu" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/menu"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   MENU
                 </Link>
               </li>
               <li>
-                <Link href="/franchising" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/franchising"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   FRANCHISING
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/contact"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   CONTACT
                 </Link>
               </li>
               <li>
-                <Link href="/join-us" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/join-us"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   JOIN US
                 </Link>
               </li>
@@ -51,22 +67,34 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4 text-white">Explore Menu</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/menus#burgers" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/menus#burgers"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   BURGERS
                 </Link>
               </li>
               <li>
-                <Link href="/menus#fries" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/menus#fries"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   FRIES
                 </Link>
               </li>
               <li>
-                <Link href="/menus#sides" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/menus#sides"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   TACOS
                 </Link>
               </li>
               <li>
-                <Link href="/menus#drinks" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/menus#drinks"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   WRAPS
                 </Link>
               </li>
@@ -77,7 +105,9 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4 text-white">Contact Us</h3>
             <div className="space-y-3">
-              <p className="text-sm text-gray-300">For Complaints/Suggestions:</p>
+              <p className="text-sm text-gray-300">
+                For Complaints/Suggestions:
+              </p>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-gray-400" />
                 <span className="text-gray-300">0302 8102529</span>
@@ -105,10 +135,16 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4 text-white">Useful Links</h3>
             <div className="space-y-2">
-              <Link href="/terms" className="text-gray-300 hover:text-white transition-colors block">
+              <Link
+                href="/terms"
+                className="text-gray-300 hover:text-white transition-colors block"
+              >
                 TERMS AND CONDITIONS
               </Link>
-              <Link href="/privacy" className="text-gray-300 hover:text-white transition-colors block">
+              <Link
+                href="/privacy"
+                className="text-gray-300 hover:text-white transition-colors block"
+              >
                 PRIVACY POLICY
               </Link>
               <div className="flex space-x-4 mt-4">
@@ -146,5 +182,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

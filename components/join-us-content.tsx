@@ -12,9 +12,9 @@ export function JoinUsContent() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-rfrom-[#ff4626] via-[#D1991C] to-[#B58215] overflow-hidden">
+      <section className="relative h-96 bg-gradient-to-rfrom-[#FF5900] via-[#D1991C] to-[#B58215] overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[#ff4626]/90"></div>
+          <div className="absolute inset-0 bg-[#FF5900]/90"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-center">
@@ -35,7 +35,7 @@ export function JoinUsContent() {
             <div className="bg-white rounded-lg shadow-lg p-12 max-w-2xl mx-auto">
               <div className="space-y-6">
                 <div className="w-24 h-24 mx-auto bg-gray-100 rounded-full flex items-center justify-center">
-                  <svg className="w-12 h-12 text-[#ff4626]" fill="none" stroke="#ff4626" viewBox="0 0 24 24">
+                  <svg className="w-12 h-12 text-[#FF5900]" fill="none" stroke="#ff4626" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -57,23 +57,23 @@ export function JoinUsContent() {
                   <h4 className="font-bold text-lg text-gray-800 mb-3">What We Offer:</h4>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#ff4626] rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-[#FF5900] rounded-full mr-3"></span>
                       Competitive salary packages
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#ff4626] rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-[#FF5900] rounded-full mr-3"></span>
                       Professional development opportunities
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#ff4626] rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-[#FF5900] rounded-full mr-3"></span>
                       Dynamic work environment
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#ff4626] rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-[#FF5900] rounded-full mr-3"></span>
                       Employee benefits and perks
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-[#ff4626] rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-[#FF5900] rounded-full mr-3"></span>
                       Career growth opportunities
                     </li>
                   </ul>
@@ -88,13 +88,13 @@ export function JoinUsContent() {
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
                       href="/contact"
-                      className="bg-[#ff4626] text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-[#ff4626] hover:cursor-pointer hover:border-1 hover:border-[#ff4626] transition-colors"
+                      className="bg-[#FF5900] text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-[#FF5900] hover:cursor-pointer hover:border-1 hover:border-[#FF5900] transition-colors"
                     >
                       Contact Us
                     </a>
                     <a
                       href="mailto:careers@Falloutburger.pk"
-                      className="border border-[#ff4626] text-[#ff4626] px-8 py-3 rounded-lg font-medium hover:bg-[#ff4626] hover:text-white transition-colors"
+                      className="border border-[#FF5900] text-[#FF5900] px-8 py-3 rounded-lg font-medium hover:bg-[#FF5900] hover:text-white transition-colors"
                     >
                       Send Resume
                     </a>

@@ -185,7 +185,7 @@ export function CheckoutContent() {
         <div className={`mb-8 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <div className="flex items-center justify-between mb-4">
             <h1 className="font-bebas-neue text-4xl md:text-5xl font-bold text-black">Checkout</h1>
-            <Link href="/cart" className="text-[#ff4626] hover:underline flex items-center">
+            <Link href="/cart" className="text-[#FF5900] hover:underline flex items-center">
               <ArrowLeft className="w-4 h-4 mr-1" />
               Back to Cart
             </Link>
@@ -199,7 +199,7 @@ export function CheckoutContent() {
               {/* Personal Information */}
               <div className={`bg-white rounded-lg shadow-lg p-6 ${isVisible ? "animate-slide-in-left" : "opacity-0"}`}>
                 <div className="flex items-center mb-6">
-                  <User className="w-5 h-5 text-[#ff4626] mr-2" />
+                  <User className="w-5 h-5 text-[#FF5900] mr-2" />
                   <h2 className="font-bold text-xl text-black">Personal Information</h2>
                 </div>
 
@@ -255,7 +255,7 @@ export function CheckoutContent() {
                 style={{ animationDelay: "0.1s" }}
               >
                 <div className="flex items-center mb-6">
-                  <MapPin className="w-5 h-5 text-[#ff4626] mr-2" />
+                  <MapPin className="w-5 h-5 text-[#FF5900] mr-2" />
                   <h2 className="font-bold text-xl text-black">Delivery Information</h2>
                 </div>
 
@@ -345,7 +345,7 @@ export function CheckoutContent() {
                 style={{ animationDelay: "0.2s" }}
               >
                 <div className="flex items-center mb-6">
-                  <CreditCard className="w-5 h-5 text-[#ff4626] mr-2" />
+                  <CreditCard className="w-5 h-5 text-[#FF5900] mr-2" />
                   <h2 className="font-bold text-xl text-black">Payment Method</h2>
                 </div>
 
@@ -412,7 +412,7 @@ export function CheckoutContent() {
                 className={`bg-white rounded-lg shadow-lg p-6 sticky top-24 ${isVisible ? "animate-slide-in-right" : "opacity-0"}`}
               >
                 <div className="flex items-center mb-6">
-                  <ShoppingBag className="w-5 h-5 text-[#ff4626] mr-2" />
+                  <ShoppingBag className="w-5 h-5 text-[#FF5900] mr-2" />
                   <h2 className="font-bold text-xl text-black">Order Summary</h2>
                 </div>
 
@@ -468,7 +468,7 @@ export function CheckoutContent() {
                   type="submit"
                   size="lg"
                   disabled={isProcessing}
-                  className="w-full bg-[#ff4626] hover:bg-[#ff4626] hover:cursor-pointer text-white py-3 text-lg font-bold disabled:opacity-50"
+                  className="w-full bg-[#FF5900] hover:bg-[#FF5900] hover:cursor-pointer text-white py-3 text-lg font-bold disabled:opacity-50"
                 >
                   {isProcessing ? "Processing..." : `Place Order - Rs ${finalTotal}`}
                 </Button>

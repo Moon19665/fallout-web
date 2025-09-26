@@ -95,8 +95,8 @@ export function CategoriesSection() {
                 </div>
 
                 {/* Category name */}
-                <div className="p-4 m-2 border-3 border-[#ff4626] rounded text-center">
-                  <h3 className="font-bold text-[#ff4626] text-sm md:text-xl tracking-wider">{category.name}</h3>
+                <div className="p-4 m-2 border-3 border-[#FF5900] rounded text-center">
+                  <h3 className="font-bold text-[#FF5900] text-sm md:text-xl tracking-wider">{category.name}</h3>
                 </div>
               </div>
             </Link>

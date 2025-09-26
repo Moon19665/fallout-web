@@ -245,7 +245,7 @@ const [quantity, setQuantity] = useState<number>(1)
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-lg font-medium text-gray-800">Choose Any One</h3>
-                    <span className="bg-[#ff4626] text-white px-3 mr-6 py-1 rounded text-sm font-medium">Required</span>
+                    <span className="bg-[#FF5900] text-white px-3 mr-6 py-1 rounded text-sm font-medium">Required</span>
                   </div>
 
                   <RadioGroup value={selectedSize} onValueChange={setSelectedSize} className="space-y-4">
@@ -262,7 +262,7 @@ const [quantity, setQuantity] = useState<number>(1)
                         </div>
                         <div className="text-right">
                           {size.originalPrice && (
-                            <div className="text-[#ff4626] line-through text-sm">{size.originalPrice.toFixed(2)}</div>
+                            <div className="text-[#FF5900] line-through text-sm">{size.originalPrice.toFixed(2)}</div>
                           )}
                           <div className="font-medium text-gray-800">Rs. {(item.price + size.price).toFixed(2)}</div>
                         </div>
@@ -315,7 +315,7 @@ const [quantity, setQuantity] = useState<number>(1)
                   >
                     <div className="flex items-center space-x-2">
                       <h3 className="text-lg font-medium text-gray-800">Extra Topping</h3>
-                      <span className="bg-[#ff4626] text-white px-2 py-1 rounded text-xs">maximum 10</span>
+                      <span className="bg-[#FF5900] text-white px-2 py-1 rounded text-xs">maximum 10</span>
                     </div>
                     {expandedSections.toppings ? (
                       <ChevronUp className="w-5 h-5 text-gray-500" />
@@ -337,7 +337,7 @@ const [quantity, setQuantity] = useState<number>(1)
                               id={topping.id}
                               checked={selectedToppings.includes(topping.id)}
                               onChange={(e) => handleToppingChange(topping.id, e.target.checked)}
-                              className="w-4 h-4 text-[#ff4626] border-gray-300 rounded focus:ring-[#ff4626]"
+                              className="w-4 h-4 text-[#FF5900] border-gray-300 rounded focus:ring-[#FF5900]"
                             />
                             <Label htmlFor={topping.id} className="font-medium text-gray-800">
                               {topping.name}
@@ -358,7 +358,7 @@ const [quantity, setQuantity] = useState<number>(1)
                   >
                     <div className="flex items-center space-x-2">
                       <h3 className="text-lg font-medium text-gray-800">Frequently Bought Together</h3>
-                      <span className="bg-[#ff4626] text-white px-2 py-1 rounded text-xs">maximum 9</span>
+                      <span className="bg-[#FF5900] text-white px-2 py-1 rounded text-xs">maximum 9</span>
                     </div>
                     {expandedSections.extras ? (
                       <ChevronUp className="w-5 h-5 text-gray-500" />
@@ -380,7 +380,7 @@ const [quantity, setQuantity] = useState<number>(1)
                               id={extra.id}
                               checked={selectedExtras.includes(extra.id)}
                               onChange={(e) => handleExtraChange(extra.id, e.target.checked)}
-                              className="w-4 h-4 text-[#ff4626] border-gray-300 rounded focus:ring-[#ff4626]"
+                              className="w-4 h-4 text-[#FF5900] border-gray-300 rounded focus:ring-[#FF5900]"
                             />
                             <img
                               src={extra.image || "/placeholder.svg"}
@@ -420,7 +420,7 @@ const [quantity, setQuantity] = useState<number>(1)
                     size="sm"
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
                     disabled={quantity <= 1}
-                    className="w-14 h-14 p-0 bg-[#ff4626] text-white hover:cursor-pointer hover:bg-[#ff4626] hover:text-white border-[#ff4626]"
+                    className="w-14 h-14 p-0 bg-[#FF5900] text-white hover:cursor-pointer hover:bg-[#FF5900] hover:text-white border-[#FF5900]"
                   >
                     <Minus className="w-5 h-5" />
                   </Button>
@@ -429,21 +429,21 @@ const [quantity, setQuantity] = useState<number>(1)
                     variant="outline"
                     size="sm"
                     onClick={() => setQuantity(quantity + 1)}
-                    className="w-14 h-14 p-0 bg-[#ff4626] text-white hover:text-white hover:bg-[#ff4626] hover:cursor-pointer "
+                    className="w-14 h-14 p-0 bg-[#FF5900] text-white hover:text-white hover:bg-[#FF5900] hover:cursor-pointer "
                   >
                     <Plus className="w-8 h-8 " />
                   </Button>
                 </div>
 
                 <div className="text-right">
-                  <div className="text-[#ff4626] line-through text-sm">{getOriginalPrice().toFixed(2)}</div>
+                  <div className="text-[#FF5900] line-through text-sm">{getOriginalPrice().toFixed(2)}</div>
                   <div className="text-xl font-bold">from Rs. {(calculateTotalPrice() / quantity).toFixed(2)}</div>
                 </div>
               </div>
 
               <Button
                 onClick={handleAddToCart}
-                className="w-full bg-[#ff4626] hover:border-1 hover:border-[#ff4626] hover:bg-white hover:text-[#ff4626] hover:cursor-pointer text-white py-6 text-xl  font-medium"
+                className="w-full bg-[#FF5900] hover:border-1 hover:border-[#FF5900] hover:bg-white hover:text-[#FF5900] hover:cursor-pointer text-white py-6 text-xl  font-medium"
               >
                 Add To Cart
               </Button>

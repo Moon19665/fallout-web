@@ -345,7 +345,7 @@ export function FooterMenuContent() {
                     className="text-sm"
                   />
                 </div>
-                <Button className="w-full text-lg mt-3 bg-[#ff4626] text-white hover:bg-[#ff4626] hover:cursor-pointer">Apply</Button>
+                <Button className="w-full text-lg mt-3 bg-[#FF5900] text-white hover:bg-[#FF5900] hover:cursor-pointer">Apply</Button>
               </div>
             </div>
           </div>
@@ -392,7 +392,7 @@ export function FooterMenuContent() {
 
                     {/* Item Details */}
                     <div className="space-y-2">
-                      <h3 className="font-bold text-lg text-black group-hover:text-[#ff4626] transition-colors">
+                      <h3 className="font-bold text-lg text-black group-hover:text-[#FF5900] transition-colors">
                         {item.name}
                       </h3>
                       <p className="text-sm text-gray-600 font-medium">From Rs {item.price}</p>
@@ -408,7 +408,7 @@ export function FooterMenuContent() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-[#ff4626] text-[#ff4626] hover:cursor-pointer text-lg font-bold hover:bg-[#ff4626] hover:text-white bg-transparent"
+                  className="border-[#FF5900] text-[#FF5900] hover:cursor-pointer text-lg font-bold hover:bg-[#FF5900] hover:text-white bg-transparent"
                 >
                   Load More Items
                 </Button>

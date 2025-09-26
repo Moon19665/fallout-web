@@ -147,7 +147,7 @@ export function Navigation() {
   return (
     <>
       {/* Top banner */}
-      <div className="bg-[#ff4626] text-white text-center py-1 text-sm relative z-50">
+      <div className="bg-[#FF5900] text-white text-center py-1 text-sm relative z-50">
         Welcome to Fallout Pakistan
       </div>
 
@@ -183,7 +183,7 @@ export function Navigation() {
                     className={`px-3 py-2 text-lg font-bold tracking-wider transition-all duration-200 hover:scale-105 ${
                       pathname === item.href
                         ? "cursor-pointer"
-                        : "text-black hover:text-[#ff4626]"
+                        : "text-black hover:text-[#FF5900]"
                     }`}
                   >
                     {item.label}
@@ -200,11 +200,11 @@ export function Navigation() {
                     variant="ghost"
                     size="sm"
                     onClick={() => setIsCartOpen(!isCartOpen)}
-                    className="text-black hover:text-[#ff4626] hover:cursor-pointer relative p-2"
+                    className="text-black hover:text-[#FF5900] hover:cursor-pointer relative p-2"
                   >
                     <ShoppingBag style={{ width: "25px", height: "25px" }} />
                     {itemCount > 0 && (
-                      <span className="absolute -top-1 -right-1 bg-[#ff4626] text-white text-xl rounded-full h-5 w-5 flex items-center justify-center font-bold animate-pulse-glow">
+                      <span className="absolute -top-1 -right-1 bg-[#FF5900] text-white text-xl rounded-full h-5 w-5 flex items-center justify-center font-bold animate-pulse-glow">
                         {itemCount}
                       </span>
                     )}
@@ -230,7 +230,7 @@ export function Navigation() {
                           </p>
                           <Button
                             size="sm"
-                            className="bg-[#ff4626] hover:bg-[#ff4626]-700 text-white"
+                            className="bg-[#FF5900] hover:bg-[#FF5900]-700 text-white"
                             onClick={() => setIsCartOpen(false)}
                           >
                             Start Shopping
@@ -254,7 +254,7 @@ export function Navigation() {
                                     <h4 className="font-medium text-sm text-black truncate">
                                       {item.name}
                                     </h4>
-                                    <p className="text-[#ff4626] font-bold text-sm">
+                                    <p className="text-[#FF5900] font-bold text-sm">
                                       Rs {item.price}
                                     </p>
 
@@ -292,7 +292,7 @@ export function Navigation() {
                                         variant="ghost"
                                         size="sm"
                                         onClick={() => removeItem(item.id)}
-                                        className="h-6 w-6 p-0 text-[#ff4626] hover:bg-red-50 ml-2"
+                                        className="h-6 w-6 p-0 text-[#FF5900] hover:bg-red-50 ml-2"
                                       >
                                         <Trash2 className="w-3 h-3" />
                                       </Button>
@@ -349,13 +349,13 @@ export function Navigation() {
                                     {hotDeals[hotDealsIndex].name}
                                   </h5>
                                   <div className="flex items-center space-x-2">
-                                    <span className="text-[#ff4626] line-through text-xs">
+                                    <span className="text-[#FF5900] line-through text-xs">
                                       Rs {hotDeals[hotDealsIndex].originalPrice}
                                     </span>
-                                    <span className="text-[#ff4626] font-bold text-sm">
+                                    <span className="text-[#FF5900] font-bold text-sm">
                                       Rs {hotDeals[hotDealsIndex].price}
                                     </span>
-                                    <span className="bg-[#ff4626] text-white px-1 py-0.5 rounded text-xs">
+                                    <span className="bg-[#FF5900] text-white px-1 py-0.5 rounded text-xs">
                                       {hotDeals[hotDealsIndex].discount}
                                     </span>
                                   </div>
@@ -369,7 +369,7 @@ export function Navigation() {
                               <span className="font-bold text-black">
                                 Total:
                               </span>
-                              <span className="font-bold text-lg text-[#ff4626]">
+                              <span className="font-bold text-lg text-[#FF5900]">
                                 Rs {total}
                               </span>
                             </div>
@@ -377,7 +377,7 @@ export function Navigation() {
                               <Link href="/cart" className="block">
                                 <Button
                                   variant="outline"
-                                  className="w-full border-[#ff4626] text-[#ff4626] hover:bg-red-50 bg-transparent"
+                                  className="w-full border-[#FF5900] text-[#FF5900] hover:bg-red-50 bg-transparent"
                                   onClick={() => setIsCartOpen(false)}
                                 >
                                   View Cart
@@ -385,7 +385,7 @@ export function Navigation() {
                               </Link>
                               <Link href="/checkout" className="block">
                                 <Button
-                                  className="w-full bg-[#ff4626] hover:bg-[#ff4626] text-white"
+                                  className="w-full bg-[#FF5900] hover:bg-[#FF5900] text-white"
                                   onClick={() => setIsCartOpen(false)}
                                 >
                                   Checkout
@@ -407,7 +407,7 @@ export function Navigation() {
                   variant="ghost"
                   size="sm"
                   onClick={() => setIsOpen(!isOpen)}
-                  className="text-black hover:text-[#ff4626] z-50 relative"
+                  className="text-black hover:text-[#FF5900] z-50 relative"
                 >
                   <div className="relative w-6 h-6">
                     <Menu
@@ -443,8 +443,8 @@ export function Navigation() {
                 href={item.href}
                 className={`block px-3 py-3 text-base font-bold tracking-wider transition-all duration-200 rounded-lg ${
                   pathname === item.href
-                    ? "text-[#ff4626] bg-red-50 border-l-4 border-[#ff4626]"
-                    : "text-black hover:text-[#ff4626] hover:bg-gray-50 hover:translate-x-2"
+                    ? "text-[#FF5900] bg-red-50 border-l-4 border-[#FF5900]"
+                    : "text-black hover:text-[#FF5900] hover:bg-gray-50 hover:translate-x-2"
                 } ${isOpen ? "animate-fade-in-up" : ""}`}
                 style={{ animationDelay: `${index * 0.1}s` }}
                 onClick={() => setIsOpen(false)}
@@ -465,7 +465,7 @@ export function Navigation() {
                 <div className="flex items-center justify-between">
                   <span>CART</span>
                   {itemCount > 0 && (
-                    <span className="bg-[#ff4626] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold">
+                    <span className="bg-[#FF5900] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold">
                       {itemCount}
                     </span>
                   )}

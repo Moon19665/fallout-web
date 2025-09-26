@@ -363,13 +363,13 @@ export function MenuContent() {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`flex-shrink-0 text-center pb-4 hover:cursor-pointer border-b-2 transition-colors ${
                     selectedCategory === category.id
-                      ? "border-[#ff4626] text-black font-bold"
+                      ? "border-[#FF5900] text-black font-bold"
                       : "border-transparent text-gray-600 hover:text-black"
                   }`}
                 >
                   <div className="flex items-center space-x-2 whitespace-nowrap">
                     {category.emoji && <span>{category.emoji}</span>}
-                    <span className="text-md font-bold text-[#ff4626] ">{category.name}</span>
+                    <span className="text-md font-bold text-[#FF5900] ">{category.name}</span>
                   </div>
                 </button>
               ))}
@@ -406,7 +406,7 @@ export function MenuContent() {
               className={`mb-8 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
               style={{ animationDelay: "0.2s" }}
             >
-              <h1 className="font-bebas-neue text-4xl md:text-5xl font-bold text-[#ff4626] mb-2 flex items-center">
+              <h1 className="font-bebas-neue text-4xl md:text-5xl font-bold text-[#FF5900] mb-2 flex items-center">
                 {categoryData.name}
                 {categoryData.emoji && <span className="ml-3">{categoryData.emoji}</span>}
               </h1>
@@ -428,14 +428,14 @@ export function MenuContent() {
                   >
                     {/* Discount Badge */}
                     {item.discount && (
-                      <div className="absolute top-4 left-4 z-10 bg-[#ff4626] text-white px-3 py-1 rounded-lg text-sm font-bold">
+                      <div className="absolute top-4 left-4 z-10 bg-[#FF5900] text-white px-3 py-1 rounded-lg text-sm font-bold">
                         {item.discount}
                       </div>
                     )}
 
                     {/* Quantity Badge */}
                     {quantity > 0 && (
-                      <div className="absolute top-4 right-4 z-10 bg-[#ff4626] text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
+                      <div className="absolute top-4 right-4 z-10 bg-[#FF5900] text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
                         {quantity}
                       </div>
                     )}
@@ -451,7 +451,7 @@ export function MenuContent() {
 
                     {/* Item Details */}
                     <div className="p-6">
-                      <h3 className="font-bold text-xl text-black mb-2 group-hover:text-[#ff4626] transition-colors">
+                      <h3 className="font-bold text-xl text-black mb-2 group-hover:text-[#FF5900] transition-colors">
                         {item.name}
                       </h3>
                       <p className="text-gray-600 text-sm mb-4 line-clamp-2">{item.description}</p>
@@ -459,7 +459,7 @@ export function MenuContent() {
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-2">
                           {item.originalPrice && (
-                            <span className="text-[#ff4626] line-through text-sm">
+                            <span className="text-[#FF5900] line-through text-sm">
                               Rs. {item.originalPrice.toFixed(2)}
                             </span>
                           )}
@@ -468,7 +468,7 @@ export function MenuContent() {
 
                         <Button
                           size="sm"
-                          className="bg-[#ff4626] hover:cursor-pointer hover:bg-[#ff4626] text-white"
+                          className="bg-[#FF5900] hover:cursor-pointer hover:bg-[#FF5900] text-white"
                           onClick={(e) => {
                             e.stopPropagation()
                             handleItemClick(item)
