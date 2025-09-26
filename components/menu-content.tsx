@@ -369,7 +369,7 @@ export function MenuContent() {
                 >
                   <div className="flex items-center space-x-2 whitespace-nowrap">
                     {category.emoji && <span>{category.emoji}</span>}
-                    <span className="text-md font-medium">{category.name}</span>
+                    <span className="text-md font-bold text-[#ff4626] ">{category.name}</span>
                   </div>
                 </button>
               ))}
@@ -406,7 +406,7 @@ export function MenuContent() {
               className={`mb-8 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
               style={{ animationDelay: "0.2s" }}
             >
-              <h1 className="font-bebas-neue text-4xl md:text-5xl font-bold text-black mb-2 flex items-center">
+              <h1 className="font-bebas-neue text-4xl md:text-5xl font-bold text-[#ff4626] mb-2 flex items-center">
                 {categoryData.name}
                 {categoryData.emoji && <span className="ml-3">{categoryData.emoji}</span>}
               </h1>

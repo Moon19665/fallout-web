@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Logo and brand */}
           <div className="col-span-1 md:col-span-1">
-            <div className="bg-white text-black px-4 py-2 font-bebas-neue text-2xl font-bold tracking-wider inline-block mb-4">
+            <div className="bg-[#ff4626] text-white px-4 py-2  text-2xl font-bold tracking-wider inline-block mb-4">
               Fallout
             </div>
           </div>
@@ -62,12 +62,12 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/menus#sides" className="text-gray-300 hover:text-white transition-colors">
-                  SIDES
+                  TACOS
                 </Link>
               </li>
               <li>
                 <Link href="/menus#drinks" className="text-gray-300 hover:text-white transition-colors">
-                  DRINKS
+                  WRAPS
                 </Link>
               </li>
             </ul>
