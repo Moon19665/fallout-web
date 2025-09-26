@@ -49,22 +49,22 @@ export function CartContent() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
-                  name: "Spicy Smashdown",
-                  price: 787.5,
+                  name: "Chilli Hot Dog",
+                  price: 850,
                   image:
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-cheNtWbQPSA0cc3xrdjE0qV09dJDUU.png",
+                    "chilli-dog.png",
                 },
                 {
-                  name: "The Meltdown",
-                  price: 750,
+                  name: "Zinger 111",
+                  price: 650,
                   image:
-                    "/gourmet-burger-with-sesame-bun--professional-food-.jpg",
+                    "/zinger.png",
                 },
                 {
-                  name: "Loaded Curly Fries",
+                  name: "Loaded Fries",
                   price: 450,
                   image:
-                    "/loaded-fries-with-cheese-and-toppings--professio.jpg",
+                    "/lfries.webp",
                 },
               ].map((item, index) => (
                 <div
@@ -74,7 +74,7 @@ export function CartContent() {
                   <img
                     src={item.image || "/placeholder.svg"}
                     alt={item.name}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-contain"
                   />
                   <div className="p-4">
                     <h3 className="font-bold text-lg text-black mb-2">
